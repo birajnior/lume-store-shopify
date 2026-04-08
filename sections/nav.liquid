@@ -5,18 +5,18 @@
     class="logo">
   <div class="busca">
     <img src="{{ 'icone-lupa-cinza.svg' | asset_url }}" alt="Buscar">
-    <input type="text" placeholder="Buscar no brecho do neném">
+    <input type="text" placeholder="Buscar na Lume Store">
     <div class="resultados"></div>
   </div>
   <div class="botoes">
     <a href="" class="whatsapp botao">
-      <img src="{{ 'icone-whatsapp-azul.svg' | asset_url }}" alt="WhatsApp">
+      <img src="{{ 'icon-whatsapp.svg' | asset_url }}" alt="WhatsApp">
     </a>
     <a href="" class="usuario botao">
-      <img src="{{ 'icone-usuario-branco.svg' | asset_url }}" alt="Usuário">
+      <img src="{{ 'icon-user.svg' | asset_url }}" alt="Usuário">
     </a>
     <button class="carrinho botao">
-      <img src="{{ 'icone-carrinho-branco.svg' | asset_url }}" alt="Carrinho">
+      <img src="{{ 'icon-car.svg' | asset_url }}" alt="Carrinho">
     </button>
   </div>
 </nav>
@@ -50,17 +50,16 @@
     font-family: var(--regular);
     font-size: var(--f2);
     color: var(--cor-preto);
-    background-color: var(--cor-gelo);
-    border: 1px solid var(--cor-gelo);
+    border: 1px solid var(--cor-marrom-principal);
     border-radius: 50px;
-    padding: 0 20px 0 55px;
+    padding: 0 20px 0 50px;
     transition: all 0.3s;
   }
   nav .busca input::placeholder {
     color: var(--cor-cinza);
   }
   nav .busca input:focus {
-    border: 1px solid var(--cor-azul);
+    border: 1px solid var(--cor-marrom-secundario);
   }
   nav .busca img {
     position: absolute;
@@ -86,14 +85,14 @@
     height: 18px;
   }
   nav .botoes a.whatsapp {
-    background-color: var(--cor-azul-claro);
+    background-color: var(--cor-background);
   }
   nav .botoes a.usuario {
-    background-color: var(--cor-azul);
+    background-color: var(--cor-background);
     margin: 0 10px
   }
   nav .botoes button.carrinho {
-    background-color: var(--cor-azul);
+    background-color: var(--cor-background);
   }
   nav .busca .resultados {
     display: none;
