@@ -1,5 +1,6 @@
 <section class="categorias">
-  <h2>Busque poR categoRias</h2>
+  <img src="{{ 'img-banner.png' | asset_url}}" alt="Banner loja">
+  <h2>Busque por categorias</h2>
   <div class="itens">
     {% for collection in collections %}
       <a href="{{ collection.url }}" class="item">
@@ -12,6 +13,7 @@
 
 <style>
   section.categorias {
+    background-color: var(--cor-marrom-secundario);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,9 +22,9 @@
     padding: 120px 80px 0
   }
   section.categorias h2 {
-    font-family: var(--candy);
-    font-size: var(--f6);
-    color: var(--cor-preto);
+    font-family: var(--playfair-display-bold);
+    font-size: var(--f8);
+    color: var(--cor-marrom-principal);
     margin: 0 0 30px;
   }
   section.categorias .itens {
